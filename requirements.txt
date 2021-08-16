@@ -74,7 +74,7 @@ Pygments==2.9.0
 PyMeeus==0.5.11
 pyparsing==2.4.7
 pyrsistent==0.18.0
-pystan==2.18.0.0
+pystan==2.17
 python-dateutil==2.8.2
 pytz==2021.1
 pyzmq==22.2.1
@@ -102,4 +102,4 @@ webencodings==0.5.1
 widgetsnbextension==3.5.1
 yarl==1.6.3
 zipp==3.5.0
-fbprophet==0.7.1
+fbprophet==0.2
