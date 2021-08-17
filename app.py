@@ -45,8 +45,6 @@ df.set_index('Time', inplace=True)
 df.head()
 
 
-ax = df['avg'].plot(title="Bitcoin daily price USD")
-ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('${x:,.0f}'))
 
 
 
@@ -86,7 +84,7 @@ end_date = start_date + timedelta(hours=1)
 
 st.write(forecast[(forecast['ds'] >= start_date) & (forecast['ds'] <= end_date)].head()[['ds','yhat']])
 
-
+st.plotly_chart(fig)
 
 
 
