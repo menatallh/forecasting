@@ -96,7 +96,7 @@ df['y'] = df[selected_series]
 forecast_data = df[['ds', 'y']].copy()
 forecast_data.reset_index(inplace=True)
 #del forecast_data['timestamp']
-st.write(forecast_data.head())
+#st.write(forecast_data.tail())
 
 
 
@@ -117,7 +117,7 @@ fig.update_layout(
         title='Btc_forecast', yaxis_title='btc_avg_price', xaxis_title="Date",
     )
 
-int_forcast_hours = st.number_input('hours forcast window ', min_value=1, max_value=10, value=1, step=1)
+int_forcast_hours = st.number_input('day forcast window ', min_value=1, max_value=10, value=1, step=1)
 
 start_date =  dt.now()
 end_date = start_date + timedelta(hours=int_forcast_hours)
