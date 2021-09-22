@@ -207,7 +207,7 @@ def eval_model(model_path,X_train,X_test,train_df,valid_df):
 
 
 
-model_path='/home/za3balawi/forecasting/mode_best.bin'
+model_path='mode_best.bin'
 #build_model(X_train,y_train)
 eval_model(model_path,X_train,X_test,train_df,valid_df)
 
