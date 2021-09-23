@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import datetime
-import joblib
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import timedelta
@@ -62,12 +62,7 @@ import logging
 logger = logging.getLogger()
 logger.setLevel(logging.CRITICAL)
 
-import os
-import gc
-import numpy as np
-import pandas as pd
 
-import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
 
@@ -82,10 +77,9 @@ warnings.filterwarnings("ignore")
 pd.set_option('display.max_columns', 200)
 
 #from datetime import datetime
-import plotly.express as px
-from itertools import product
+
 import warnings
-#import statsmodels.api as sm
+
 import os
 from sklearn import ensemble
 from sklearn import metrics
@@ -207,7 +201,7 @@ def eval_model(model_path,X_train,X_test,train_df,valid_df):
 
 
 
-model_path='mode_best.bin'
+model_path='/home/za3balawi/forecasting/mode_best.bin'
 #build_model(X_train,y_train)
 eval_model(model_path,X_train,X_test,train_df,valid_df)
 
