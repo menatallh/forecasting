@@ -101,10 +101,10 @@ from helper import *
 
 
 
-#get('datas-Hourly.csv', period=PERIOD, market=MARKET)
+df=get('datas-Hourly.csv', period=PERIOD, market=MARKET)
 
 
-df = pd.read_csv('datas-Hourly.csv', sep=',')
+#df = pd.read_csv('datas-Hourly.csv', sep=',')
 df=dropna(df)
 
 #df.head()
