@@ -11,3 +11,6 @@ pystan==2.19.1.1
 plotly==4.14.3
 #fbprophet==0.7.1
 yfinance==0.1.59
+plotly==5.1.0 
+
+matplotlib==3.3.4 
